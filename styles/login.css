@@ -1,0 +1,160 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+}
+
+/* Container principal dividido */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  height: 90vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(111, 149, 255, 0.2);
+}
+
+/* Lado esquerdo com logo */
+.left {
+  flex: 1;
+  background: linear-gradient(135deg, #000000, #1c1c1c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.left .logo {
+  width: 250px;
+  filter: drop-shadow(0 0 40px #00bfff80);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Animação suave no brilho */
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 40px #00bfff80);
+  }
+  50% {
+    filter: drop-shadow(0 0 70px #00bfff);
+  }
+}
+
+/* Lado direito com formulário */
+.right {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 360px;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  color: #1c0b2b;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.login-box input:focus {
+  border: 1px solid #5c65c0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #5c65c0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #6f95ff;
+}
+
+.login-box a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #5c65c0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-box .cadastro {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.login-box .cadastro a {
+  color: #1c0b2b;
+  font-weight: bold;
+}
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: #323232;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.success {
+    background-color: #4caf50;
+}
+
+.toast.error {
+    background-color: #f44336;
+}

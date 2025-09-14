@@ -1,0 +1,413 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FernandezCode - Desenvolvimento de Software Sob Medida</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <a href="https://wa.me/5521994168063" target="_blank" class="floating-whatsapp-btn" aria-label="Fale Conosco pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.85 7.85 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943s-.182-.15-.38-.25z"/>
+    </svg>
+  </a>
+  <header id="header">
+    <div class="navbar">
+     <div class="navbar-left">
+        <a href="#inicio" class="logo">
+          <img src="img/logo.png" alt="Logo FernandezCode" />
+        </a>
+        <nav class="menu" id="nav-menu"> <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#servicos">Serviços</a>
+        </nav>
+      </div>
+     
+<div class="navbar-right">
+ 
+  <a href="https://wa.me/5521965701549" target="_blank" class="btn btn-contact">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.85 7.85 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943s-.182-.15-.38-.25z"/>
+    </svg>
+    Fale Agora
+  </a>
+  
+  <div class="hamburger" id="hamburger-button">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+
+</div>
+     
+
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="background-bubbles">
+        <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+      </div>
+      <svg class="hero-svg" viewBox="0 0 1440 320">
+          <path fill="#00c3ff22" fill-opacity="1" d="M0,64L60,74.7C120,85,240,107,360,128C480,149,600,171,720,176C840,181,960,171,1080,176C1200,181,1320,203,1380,213.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      </svg>
+      <div class="hero-content">
+        <h1>Soluções Web Que Transformam o Seu Negócio.</h1>
+        <p class="slogan">Desenvolvemos sistemas e sites sob medida para automatizar processos e impulsionar o seu crescimento.</p>
+        <div class="cta-group">
+            <a href="#servicos" class="btn-cta primary">Solicite Um Orçamento</a>
+            <a href="#projetos" class="btn-cta secondary">Ver Projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre-interativo">
+      <div class="container">
+        <h2 class="titulo-secao">Da Ideia ao Lançamento: Sua Jornada Conosco</h2>
+        <p class="subtitulo-secao">Acreditamos que cada grande projeto é uma parceria. Veja como transformamos sua visão em uma solução digital de sucesso, passo a passo.</p>
+        <div class="timeline-container">
+          <div class="timeline-linha-progresso"></div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>01. Sua Visão, Nosso Ponto de Partida</h3>
+              <p>Tudo começa com você. Realizamos uma imersão completa para entender seus objetivos, desafios e o público que você quer alcançar.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>02. Planejamento & Estratégia</h3>
+              <p>Mapeamos a arquitetura, definimos as tecnologias e criamos um protótipo visual. É aqui que a ideia começa a tomar forma e a estratégia é traçada.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>03. Design & Desenvolvimento</h3>
+              <p>Com o plano validado, nossa equipe entra em ação. Codificamos uma solução robusta com um design intuitivo, mantendo você atualizado em cada etapa.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>04. Lançamento & Suporte Contínuo</h3>
+              <p>Após testes rigorosos, colocamos seu projeto no ar. Mas nossa parceria não termina aqui: oferecemos suporte contínuo para garantir sua evolução.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swipe-indicator">Arraste para o lado ➤</div>
+        
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <div class="container">
+        <h2 class="titulo-secao">Projetos que Geram Resultados</h2>
+        <p class="subtitulo-secao">Não criamos apenas software. Entregamos soluções que resolvem problemas reais e impulsionam negócios.</p>
+       <div class="showcase-container" data-aos="fade-up">
+  <div class="showcase-image">
+    <img src="./img/mackup.jpg" alt="Mockup do sistema de barbearia Caradogol"/>
+  </div>
+  <div class="showcase-info">
+    <span class="tag">Estudo de Caso</span>
+    <h3>Sistema de Barbearia Caradogol</h3>
+    <p class="subtitle">Transformando agendamentos manuais em uma experiência digital completa e eficiente.</p>
+    
+    <div class="case-study-tabs">
+      <button class="tab-pill active" data-target="#content-desafio">O Desafio</button>
+      <button class="tab-pill" data-target="#content-solucao">A Solução</button>
+      <button class="tab-pill" data-target="#content-tecnologias">Tecnologias</button>
+    </div>
+
+    <div class="case-study-content">
+      <div class="content-panel active" id="content-desafio">
+        <p>O cliente enfrentava dificuldades com agendamentos via WhatsApp, resultando em sobreposições de horários e falta de controle sobre o fluxo de trabalho.</p>
+      </div>
+      <div class="content-panel" id="content-solucao">
+        <p>Desenvolvemos uma plataforma web sob medida com funcionalidades chave:</p>
+        <ul>
+          <li>Agendamento Online Intuitivo</li>
+          <li>Painel de Controle para Barbeiros</li>
+          <li>Área do Cliente com Histórico</li>
+        </ul>
+      </div>
+      <div class="content-panel" id="content-tecnologias">
+        <div class="tech-tags">
+          <span>PHP</span>
+          <span>JavaScript</span>
+          <span>MySQL</span>
+          <span>CSS3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-cta">
+      <a href="https://caradogol.com.br" target="_blank" class="btn-cta primary">Ver Projeto Ao Vivo</a>
+      <a href="#contato" class="btn-cta secondary">Tenho um Projeto Parecido</a>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="cta-container" data-aos="fade-up">
+          <h3>O que mais posso construir para o seu negócio?</h3>
+          <div class="cta-grid">
+            <div class="cta-card">
+              <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 8h.01M7 18h.01"/></svg>
+              <h4>Sistemas de Gestão</h4>
+              <p>Plataformas para agendamentos, controle de estoque, fluxo de caixa e gestão de clientes.</p>
+            </div>
+            <div class="cta-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h20v10H2zM5 2v4M19 2v4M2 12h20"/></svg>
+              <h4>Sites Institucionais</h4>
+              <p>Páginas de apresentação para sua empresa, focadas em design profissional e otimização para SEO.</p>
+            </div>
+            <div class="cta-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              <h4>Plataformas de E-commerce</h4>
+              <p>Lojas virtuais completas, com gestão de produtos e integração com meios de pagamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <section id="servicos" class="servicos">
+  <div class="container">
+    <h2 class="titulo-secao">Nossas Soluções</h2>
+    <p class="subtitulo-secao">Soluções digitais sob medida para transformar sua presença online e otimizar seus processos.</p>
+    
+    <div class="accordion-container" data-aos="fade-up">
+      <!-- Item 1: Landing Pages -->
+      <div class="accordion-item active">
+        <div class="accordion-header">
+          <div class="accordion-header-content">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm0 0c2.5 2.5 2.5 15.5 0 18 0 0-2.5-2.5-2.5-9S12 2 12 2Z" /></svg>
+            <h3>Landing Pages</h3>
+          </div>
+          <div class="accordion-icon">+</div>
+        </div>
+        <div class="accordion-body" style="max-height: 500px;">
+          <div class="accordion-body-content">
+            <h4>Páginas de Alto Impacto Visual e Foco em Conversão.</h4>
+            <p>Criamos landing pages que não são apenas bonitas, mas verdadeiras máquinas de conversão. Cada elemento é pensado estrategicamente para capturar a atenção do seu público e guiá-lo para a ação desejada, seja um cadastro, uma venda ou um contacto.</p>
+            <ul>
+              <li>Design Responsivo e Moderno</li>
+              <li>Otimização para Carregamento Rápido (SEO)</li>
+              <li>Formulários de Captura de Leads</li>
+              <li>Integração com Ferramentas de Marketing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Item 2: Sistemas Web -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-header-content">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 8h.01M7 18h.01"/></svg>
+            <h3>Sistemas Web Completos</h3>
+          </div>
+          <div class="accordion-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-body-content">
+            <h4>Aplicações Robustas para Otimizar a Gestão do Seu Negócio.</h4>
+            <p>Desenvolvemos sistemas web sob medida para automatizar processos, centralizar informações e dar a si o controlo total sobre a sua operação. Desde painéis administrativos a plataformas complexas, criamos a ferramenta exata que você precisa.</p>
+             <ul>
+              <li>Painel Administrativo Intuitivo</li>
+              <li>Gestão de Utilizadores e Permissões</li>
+              <li>Banco de Dados Seguro e Escalável</li>
+              <li>Relatórios e Dashboards Personalizados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Item 3: Suporte & Manutenção -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-header-content">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4M2 12h4m2.5-5.5 3 3M9.5 15.5l3-3m5.5-4-3 3M14.5 14.5l3 3M14 2v4m0 12v4" /></svg>
+            <h3>Suporte & Manutenção</h3>
+          </div>
+          <div class="accordion-icon">+</div>
+        </div>
+        <div class="accordion-body">
+           <div class="accordion-body-content">
+            <h4>Garantia de Performance e Segurança Contínua.</h4>
+            <p>Um software de qualidade precisa de cuidados contínuos. Oferecemos planos de suporte e manutenção para garantir que a sua aplicação esteja sempre segura, atualizada e a funcionar no seu máximo potencial, para que você possa focar-se no seu negócio.</p>
+             <ul>
+              <li>Atualizações de Segurança</li>
+              <li>Correção de Bugs e Otimizações</li>
+              <li>Backups Periódicos</li>
+              <li>Suporte Técnico Especializado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Item 4: Integrações e APIs -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-header-content">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M19.4 15a8 8 0 0 0 0-6M4.6 9a8 8 0 0 0 0 6M12 14v7m0-14V3"/></svg>
+            <h3>Integrações e APIs</h3>
+          </div>
+          <div class="accordion-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-body-content">
+            <h4>Conectamos o Seu Sistema ao Mundo.</h4>
+            <p>Nenhuma aplicação funciona isoladamente. Integramos o seu sistema com as principais ferramentas e serviços do mercado, desde gateways de pagamento (Stripe, PayPal) a CRMs (Salesforce, HubSpot) e ferramentas de automação, criando um ecossistema digital coeso.</p>
+            <ul>
+              <li>Integração com Gateways de Pagamento</li>
+              <li>Conexão com CRMs e Ferramentas de Marketing</li>
+              <li>Login Social (Google, Facebook)</li>
+              <li>Desenvolvimento de APIs Próprias</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo" class="processo">
+  <div class="container">
+    <h2 class="titulo-secao">Nossa Jornada de Parceria</h2>
+    <p class="subtitulo-secao">Seguimos um fluxo de trabalho transparente e colaborativo, garantindo que você esteja no controlo em cada etapa do projeto.</p>
+    
+    <div class="processo-grid">
+      <!-- Etapa 1 -->
+      <div class="etapa" data-aos="fade-up">
+        <div class="etapa-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.73 18a2.62 2.62 0 0 1-2.62 2.62H4.89a2.62 2.62 0 0 1-2.62-2.62V6.26a2.62 2.62 0 0 1 2.62-2.62h10.39a1 1 0 0 1 .71.29l4.83 4.83a1 1 0 0 1 .29.71z"/><path d="M12 22.01V18.5a2.5 2.5 0 0 1 2.5-2.5h1.07"/></svg>
+        </div>
+        <div class="etapa-numero">01</div>
+        <h3>Briefing e Imersão</h3>
+        <p>Entendemos a sua ideia, necessidades e objetivos. Tudo começa com uma boa conversa.</p>
+      </div>
+      
+      <!-- Etapa 2 -->
+      <div class="etapa" data-aos="fade-up" data-aos-delay="100">
+        <div class="etapa-icone">
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><path d="M11 13a2 2 0 1 1-2-2 2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="etapa-numero">02</div>
+        <h3>Design e Prototipagem</h3>
+        <p>Criamos um layout visual e um protótipo navegável da solução para validar a direção do projeto consigo.</p>
+      </div>
+      
+      <!-- Etapa 3 -->
+      <div class="etapa" data-aos="fade-up" data-aos-delay="200">
+        <div class="etapa-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20l4-16m4 16l-4-16M1 9h22M1 15h22"/></svg>
+        </div>
+        <div class="etapa-numero">03</div>
+        <h3>Desenvolvimento</h3>
+        <p>Construímos a aplicação com código limpo, performance, segurança e tecnologia de ponta.</p>
+      </div>
+      
+      <!-- Etapa 4 -->
+      <div class="etapa" data-aos="fade-up" data-aos-delay="300">
+        <div class="etapa-icone">
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.71.71a5.4 5.4 0 0 0 0 7.65l.71.71a5.4 5.4 0 0 0 7.65 0l4.24-4.24a5.4 5.4 0 0 0 0-7.65z"/><path d="M3.58 20.42a5.4 5.4 0 0 0 7.65 0l.71-.71a5.4 5.4 0 0 0 0-7.65L11.23 11.3a5.4 5.4 0 0 0-7.65 0L0 15.54a5.4 5.4 0 0 0 0 7.65z"/></svg>
+        </div>
+        <div class="etapa-numero">04</div>
+        <h3>Testes e Validação</h3>
+        <p>Testamos exaustivamente todas as funcionalidades junto consigo para garantir a máxima qualidade.</p>
+      </div>
+      
+      <!-- Etapa 5 -->
+      <div class="etapa" data-aos="fade-up" data-aos-delay="400">
+        <div class="etapa-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        </div>
+        <div class="etapa-numero">05</div>
+        <h3>Lançamento</h3>
+        <p>Colocamos o projeto no ar com domínio, SSL e otimizações para garantir performance e estabilidade.</p>
+      </div>
+      
+      <!-- Etapa 6 -->
+      <div class="etapa" data-aos="fade-up" data-aos-delay="500">
+        <div class="etapa-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-4.44a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.38"/><path d="M16 2l6 6h-6V2zM7 15h7M7 18h7"/></svg>
+        </div>
+        <div class="etapa-numero">06</div>
+        <h3>Suporte e Evolução</h3>
+        <p>Oferecemos suporte técnico, melhorias contínuas e novas funcionalidades pós-lançamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contato" class="footer">
+  <div class="container">
+    <div class="footer-hub">
+      <div class="footer-intro" data-aos="fade-right">
+        <h3>Vamos transformar a sua ideia em realidade?</h3>
+        <p>Estou pronto para ouvir sobre o seu projeto. Escolha o melhor canal abaixo e vamos começar a conversa. O orçamento é gratuito e sem compromisso.</p>
+      </div>
+      <div class="footer-contact-options" data-aos="fade-left" data-aos-delay="200">
+        
+        <!-- CARTÃO DE E-MAIL - ATUALIZADO -->
+        <a href="mailto:andreifernandezdevv@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="contact-card-info">
+            <span>Envie um E-mail</span>
+            <strong>andreifernandezdevv@gmail.com</strong>
+          </div>
+        </a>
+        
+        <!-- CARTÃO DE WHATSAPP - ATUALIZADO -->
+        <a href="https://wa.me/5521965701549" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.85 7.85 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943s-.182-.15-.38-.25z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <span>Chame no WhatsApp</span>
+            <strong>+55 (21) 96570-1549</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/andrei-sousa-fernandes/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href=" https://github.com/Fernandezdevv " target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+      <p>&copy; 2024 FernandezCode. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./indexx.js"></script>
+  <script>
+    AOS.init({
+        duration: 800,
+        once: true,
+    });
+  </script>
+
+  
+</body>
+</html>
